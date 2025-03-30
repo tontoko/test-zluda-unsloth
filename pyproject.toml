@@ -1,0 +1,31 @@
+[project]
+name = "qlora-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "torch==2.4.0+cu118",
+    "torchaudio==2.4.0+cu118",
+    "torchvision==0.19+cu118",
+    "xformers==0.0.27.post2+cu118",
+    "packaging==24.1",
+    "triton-windows==3.1.0.post17",
+    "bitsandbytes==0.45.4",
+    "setuptools==70.2.0",
+    "numpy<2",
+    "unsloth[windows]==2025.3.18",
+    "unsloth-zoo==2025.3.17",
+]
+
+[build-system]
+requires = ["setuptools==70.2.0"]
+build-backend = "setuptools.build_meta"
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+unsloth = { git = "https://github.com/unslothai/unsloth.git" }
