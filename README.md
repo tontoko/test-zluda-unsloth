@@ -6,7 +6,7 @@ Sample project for unsloth & zluda fork.
 https://github.com/lshqqytiger/ZLUDA
 
 ```powershell
-C:\[PATH_TO_ZLUDA]\zluda.exe
+C:\[PATH_TO_ZLUDA]\zluda.exe -- python -X utf8 ./main.py
 ```
 
 For my enviroment, using also ROCmLibs for RX9070.
