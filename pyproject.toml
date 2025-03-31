@@ -9,16 +9,13 @@ dependencies = [
     "torchvision==0.19.0+cu118",
     "xformers==0.0.27.post2+cu118",
     "packaging==24.2",
-    "triton-windows==3.3.0a0.post17",
+    "triton-windows==3.1.0.post17",
     "bitsandbytes==0.45.4",
     "setuptools==78.1.0",
     "numpy<2",
     "unsloth[windows]==2025.3.19",
+    "datasets==3.4.1",
 ]
-
-[build-system]
-requires = ["setuptools==78.1.0"]
-build-backend = "setuptools.build_meta"
 
 [tool.uv]
 find-links = [
