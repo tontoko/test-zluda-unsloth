@@ -62,7 +62,7 @@ if __name__ == '__main__':
         split="train",
     )
 
-    dataset = dataset.train_test_split(train_size=0.30)["train"]
+    dataset = dataset.train_test_split(train_size=0.01)["train"]
 
     news_prompt = """
     ###text:{}
@@ -101,7 +101,7 @@ if __name__ == '__main__':
         train_dataset=dataset,  # トレーニングデータセット
         dataset_text_field="text",  # データセット内のテキストフィールド名
         max_seq_length=max_seq_length,  # 最大シーケンス長
-        dataset_num_proc=2,  # データセット処理に使用するプロセス数
+        dataset_num_proc=1,  # データセット処理に使用するプロセス数
         args=UnslothTrainingArguments(
             per_device_train_batch_size=2,  # 各デバイスごとのバッチサイズ
             gradient_accumulation_steps=8,  # 勾配の累積ステップ数
