@@ -1,5 +1,8 @@
 # WIP
 
+TODO
+https://github.com/lshqqytiger/triton?tab=readme-ov-file#build-for-windows
+
 # README
 
 Sample project for unsloth & zluda fork.
